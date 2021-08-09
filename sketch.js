@@ -41,6 +41,9 @@ function setup() {
     120
   );
   
+  for(let i = 0; i < playerArrows.length; i++){
+    showarrow();
+  }
   //Create an arrow Object
   
   
@@ -57,6 +60,7 @@ function draw() {
   textSize(40);
   text("EPIC ARCHERY", width / 2, 100);
 
+  ellipse()
  
   playerBase.display();
   player.display();
@@ -81,14 +85,15 @@ function draw() {
   }
 
   //Display arrow();
-  
+ 
   //if Space (32) key is pressed call shoot function of playerArrow
-  if(keyCode === 32){
+  
+
     //Call shoot() function and pass angle of playerArcher
     arrow.shoot(playerArcher.body.angle)
 
   }
-}
+
 
 
 
